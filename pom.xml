@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0                              http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+		<groupId>net.sf.jasperreports</groupId>
+	<artifactId>jasperreports-build-all</artifactId>
+	<version>0.0.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<modules>
+		<module>jasperreports</module>
+		<module>jasperreports/ext/fonts</module>
+		<module>jasperreports/tools/annotation-processors</module>
+		<module>jasperreports/tools/metadata</module>
+	</modules>
+
+  <distributionManagement>
+		<repository>
+			<id>invesdwin-oss</id>
+			<name>invesdwin-oss</name>
+			<url>https://invesdwin.de/repo/invesdwin-oss</url>
+		</repository>
+		<snapshotRepository>
+			<id>invesdwin-oss</id>
+			<name>invesdwin-oss</name>
+			<url>https://invesdwin.de/repo/invesdwin-oss</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+	<repositories>
+		<repository>
+			<id>invesdwin-oss</id>
+			<url>http://invesdwin.de/repo/invesdwin-oss-remote</url>
+		</repository>
+	</repositories>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>invesdwin-oss</id>
+			<url>http://invesdwin.de/repo/invesdwin-oss-remote</url>
+		</pluginRepository>
+	</pluginRepositories>
+
+</project>
